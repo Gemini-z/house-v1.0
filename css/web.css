@@ -1,0 +1,653 @@
+@import url(../iconfont/iconfont.css);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Microsoft Yahei';
+}
+
+.top {
+  width: 100%;
+  height: 66px;
+  background: #f6f6f6;
+  margin: 0 auto;
+}
+.top .top-left {
+  width: 65%;
+  height: 66px;
+  float: left;
+}
+.top .top-left .logo {
+  width: 114px;
+  height: 66px;
+  background: url("../image/logo.png") center center no-repeat;
+  float: left;
+  margin-left: 70px;
+}
+.top .top-left .city {
+  height: 66px;
+  border: none;
+  font-size: 14px;
+  color: #5a5a5a;
+  background: #f6f6f6;
+  float: left;
+  margin-left: 50px;
+  line-height: 66px;
+}
+.top .top-left .city .select {
+  font-family: 'iconfont';
+  color: #f1b07a;
+  float: left;
+  margin-top: -65px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.top .top-left .city .cities {
+  width: 130px;
+  height: 80px;
+  border: 1px solid #ccc;
+  background: #fcfbfb;
+  line-height: 40px;
+  position: absolute;
+  top: 60px;
+  left: 200px;
+  display: none;
+}
+.top .top-left .city .cities .site {
+  font-size: 16px;
+  color: #5a5a5a;
+  text-indent: 13px;
+}
+.top .top-left .navs {
+  width: 420px;
+  height: 66px;
+  float: right;
+}
+.top .top-left .navs .nav {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  line-height: 66px;
+  float: left;
+  margin-left: 15px;
+}
+.top .top-right {
+  width: 35%;
+  height: 66px;
+  float: right;
+}
+.top .top-right .enter {
+  font-size: 14px;
+  color: #333;
+  line-height: 66px;
+  margin-left: 100px;
+}
+.top .top-right .enter span {
+  font-family: 'iconfont';
+  color: #f1b07a;
+}
+
+.site {
+  width: 100%;
+  height: 56px;
+}
+.site .site1 {
+  font-size: 14px;
+  color: #a3a3a3;
+  line-height: 56px;
+  margin-left: 75px;
+}
+
+.ban {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+.ban .ban-left {
+  width: 258px;
+  height: 638px;
+  float: left;
+}
+.ban .ban-left .left-tit1 {
+  width: 100%;
+  height: 146px;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+}
+.ban .ban-left .left-tit1 .tit1 {
+  width: 100%;
+  height: 37px;
+  background: #f7f7f7;
+  font-size: 14px;
+  color: #333333;
+  border-bottom: 1px solid #dddddd;
+  line-height: 37px;
+  text-indent: 2em;
+}
+.ban .ban-left .left-tit1 .tit2 {
+  font-size: 14px;
+  color: #4e4e4e;
+  text-indent: 2em;
+  margin-top: 14px;
+}
+.ban .ban-left .left-tit2 {
+  width: 100%;
+  height: 116px;
+  border: 1px solid #dddddd;
+  border-top: none;
+}
+.ban .ban-left .left-tit2 .tit1 {
+  width: 100%;
+  height: 37px;
+  background: #f7f7f7;
+  font-size: 14px;
+  color: #333333;
+  border-bottom: 1px solid #dddddd;
+  line-height: 37px;
+  text-indent: 2em;
+}
+.ban .ban-left .left-tit2 .tit2 {
+  font-size: 14px;
+  color: #4e4e4e;
+  text-indent: 2em;
+  margin-top: 14px;
+}
+.ban .ban-left .left-tit3 {
+  width: 100%;
+  height: 121px;
+  border: 1px solid #dddddd;
+  border-top: none;
+}
+.ban .ban-left .left-tit3 .tit1 {
+  width: 100%;
+  height: 37px;
+  background: #f7f7f7;
+  font-size: 14px;
+  color: #333333;
+  border-bottom: 1px solid #dddddd;
+  line-height: 37px;
+  text-indent: 2em;
+}
+.ban .ban-left .left-tit3 .tit2 {
+  font-size: 14px;
+  color: #4e4e4e;
+  text-indent: 2em;
+  margin-top: 14px;
+}
+.ban .ban-right {
+  width: 923px;
+  height: auto;
+  float: right;
+  margin-left: 19px;
+}
+.ban .ban-right .right-top {
+  width: 783px;
+  height: 35px;
+}
+.ban .ban-right .right-top .pic1 {
+  width: 270px;
+  height: 35px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  background: url("../image/top1.png") no-repeat;
+  float: left;
+}
+.ban .ban-right .right-top .pic2 {
+  width: 270px;
+  height: 35px;
+  font-size: 14px;
+  color: #4b4b4b;
+  text-align: center;
+  line-height: 35px;
+  background: url("../image/top2.png") no-repeat;
+  float: left;
+  margin-left: -15px;
+}
+.ban .ban-right .right-top .pic3 {
+  width: 257px;
+  height: 35px;
+  font-size: 14px;
+  color: #4b4b4b;
+  text-align: center;
+  line-height: 35px;
+  background: url("../image/top3.png") no-repeat;
+  float: left;
+  margin-left: -15px;
+}
+.ban .ban-right .name {
+  width: 555px;
+  height: 33px;
+  float: left;
+  margin-left: 63px;
+  margin-top: 34px;
+}
+.ban .ban-right .name .text1 {
+  font-size: 14px;
+  color: #a4a4a4;
+  line-height: 33px;
+  float: left;
+}
+.ban .ban-right .name .input {
+  width: 423px;
+  height: 33px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  text-indent: 13px;
+}
+.ban .ban-right .name .judge {
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+}
+.ban .ban-right .seek {
+  width: 300px;
+  height: auto;
+  float: left;
+  margin-left: -500px;
+  margin-top: 90px;
+}
+.ban .ban-right .seek .find {
+  width: 100px;
+  height: 30px;
+  background: #ec6c00;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.ban .ban-right .seek .map {
+  width: 500px;
+  height: 200px;
+  border: 1px solid #ccc;
+  float: left;
+  display: none;
+}
+.ban .ban-right .area {
+  width: 530px;
+  height: 34px;
+  float: left;
+  margin-left: 60px;
+  margin-top: 31px;
+}
+.ban .ban-right .area .star {
+  color: red;
+  float: left;
+  line-height: 31px;
+}
+.ban .ban-right .area .text2 {
+  font-size: 14px;
+  color: #696969;
+  line-height: 31px;
+  float: left;
+}
+.ban .ban-right .area .select1 {
+  width: 201px;
+  height: 31px;
+  font-size: 13px;
+  color: #b2b2b2;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  text-indent: 13px;
+  float: left;
+}
+.ban .ban-right .area #check {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: 220px;
+  font-family: 'iconfont';
+}
+.ban .ban-right .area .select2 {
+  width: 201px;
+  height: 31px;
+  font-size: 13px;
+  color: #b2b2b2;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  text-indent: 13px;
+  float: left;
+  margin-top: -31px;
+  margin-left: 20px;
+}
+.ban .ban-right .house {
+  width: 472px;
+  height: 32px;
+  float: left;
+  margin-left: 89px;
+  margin-top: 29px;
+}
+.ban .ban-right .house .star {
+  color: red;
+  float: left;
+  line-height: 31px;
+}
+.ban .ban-right .house .text2 {
+  font-size: 14px;
+  color: #696969;
+  line-height: 31px;
+  float: left;
+}
+.ban .ban-right .house .input {
+  width: 76px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  float: left;
+}
+.ban .ban-right .house .room {
+  width: 27px;
+  height: 31px;
+  font-size: 16px;
+  color: #707070;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+}
+.ban .ban-right .house .room1 {
+  width: 40px;
+  height: 31px;
+  font-size: 16px;
+  color: #707070;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: 445px;
+  margin-top: -30px;
+}
+.ban .ban-right .rent {
+  width: 550px;
+  height: 34px;
+  float: left;
+  margin-left: 61px;
+  margin-top: 28px;
+}
+.ban .ban-right .rent .star {
+  color: red;
+  float: left;
+  line-height: 31px;
+}
+.ban .ban-right .rent .text2 {
+  font-size: 14px;
+  color: #696969;
+  line-height: 31px;
+  float: left;
+}
+.ban .ban-right .rent .font {
+  font-size: 13px;
+  color: #8f8f8f;
+  line-height: 30px;
+}
+.ban .ban-right .rent .bedroom {
+  width: 121px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #d6d6d6;
+  float: left;
+  margin-top: -30px;
+  margin-left: 170px;
+}
+.ban .ban-right .rent #check1 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: 428px;
+  margin-top: -30px;
+  font-family: 'iconfont';
+}
+.ban .ban-right .rent .condition {
+  width: 121px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #d6d6d6;
+  float: left;
+  margin-top: -30px;
+  margin-left: 381px;
+}
+.ban .ban-right .pro {
+  width: 530px;
+  height: 31px;
+  float: left;
+  margin-left: 88px;
+  margin-top: 28px;
+}
+.ban .ban-right .pro .star {
+  color: red;
+  float: left;
+  line-height: 31px;
+}
+.ban .ban-right .pro .text2 {
+  font-size: 14px;
+  color: #696969;
+  line-height: 31px;
+  float: left;
+}
+.ban .ban-right .pro .text {
+  width: 420px;
+  height: 31px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  text-indent: 13px;
+  overflow: hidden;
+  float: left;
+}
+.ban .ban-right .pro .text .text-1 {
+  border: none;
+  float: left;
+  line-height: 31px;
+  text-indent: 13px;
+  outline: none;
+}
+.ban .ban-right .pro .text .text-2 {
+  font-size: 16px;
+  border: none;
+  float: right;
+  margin-right: -140px;
+  line-height: 31px;
+}
+.ban .ban-right .pro .num {
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+}
+.ban .ban-right .money {
+  width: 530px;
+  height: 31px;
+  float: left;
+  margin-left: 88px;
+  margin-top: 28px;
+}
+.ban .ban-right .money .star {
+  color: red;
+  float: left;
+  line-height: 31px;
+}
+.ban .ban-right .money .text2 {
+  font-size: 14px;
+  color: #696969;
+  line-height: 31px;
+  float: left;
+}
+.ban .ban-right .money .text {
+  width: 420px;
+  height: 31px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  text-indent: 13px;
+  overflow: hidden;
+  float: left;
+}
+.ban .ban-right .money .text .text_1 {
+  border: none;
+  float: left;
+  line-height: 31px;
+  text-indent: 13px;
+  outline: none;
+}
+.ban .ban-right .money .text .text_2 {
+  font-size: 16px;
+  border: none;
+  float: right;
+  margin-right: -155px;
+  line-height: 31px;
+}
+.ban .ban-right .money .nb {
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+}
+.ban .ban-right .tel {
+  width: 476px;
+  height: 31px;
+  float: left;
+  margin-left: 61px;
+  margin-top: 28px;
+}
+.ban .ban-right .tel .star {
+  color: red;
+  float: left;
+  line-height: 31px;
+}
+.ban .ban-right .tel .text2 {
+  font-size: 14px;
+  color: #696969;
+  line-height: 31px;
+  float: left;
+}
+.ban .ban-right .tel .import {
+  width: 435px;
+  height: 31px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  text-indent: 13px;
+  float: left;
+  margin-left: 61px;
+  margin-top: -31px;
+}
+.ban .ban-right .tel .alter {
+  width: 250px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-left: 503px;
+  margin-top: -30px;
+}
+.ban .ban-right .pay {
+  width: 505px;
+  height: 31px;
+  float: left;
+  margin-left: 61px;
+  margin-top: 28px;
+}
+.ban .ban-right .pay .star {
+  color: red;
+  float: left;
+  line-height: 31px;
+}
+.ban .ban-right .pay .text2 {
+  font-size: 14px;
+  color: #696969;
+  line-height: 31px;
+  float: left;
+}
+.ban .ban-right .pay .choice {
+  font-size: 16px;
+  color: #707070;
+  line-height: 31px;
+}
+.ban .ban-right .total {
+  width: 505px;
+  height: 31px;
+  float: left;
+  margin-left: 61px;
+  margin-top: 28px;
+}
+.ban .ban-right .total .star {
+  color: red;
+  float: left;
+  line-height: 31px;
+}
+.ban .ban-right .total .text2 {
+  font-size: 14px;
+  color: #696969;
+  line-height: 31px;
+  float: left;
+}
+.ban .ban-right .total .fuzzy {
+  width: 435px;
+  height: 31px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  float: left;
+  margin-left: 75px;
+  margin-top: -31px;
+}
+.ban .ban-right .refer {
+  width: 140px;
+  height: 41px;
+  background: #ec6c00;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 41px;
+  float: left;
+  margin-left: -430px;
+  margin-top: 81px;
+}
+
+.bottom {
+  width: 100%;
+  height: 117px;
+  background: #333;
+  float: left;
+}
+.bottom .bottom-left {
+  width: 70%;
+  height: 117px;
+  float: left;
+}
+.bottom .bottom-left .font {
+  float: left;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.bottom .bottom-left .font p {
+  font-size: 12px;
+  color: #8b8b8b;
+  line-height: 20px;
+}
+.bottom .bottom-left .font p .pic {
+  float: left;
+  margin-left: -15px;
+}
+.bottom .bottom-left .font p .a {
+  font-size: 12px;
+  color: #8b8b8b;
+  line-height: 25px;
+}
+.bottom .bottom-right {
+  width: 30%;
+  height: 117px;
+  float: right;
+}
+.bottom .bottom-right .bottom-logo {
+  float: right;
+  margin-right: 80px;
+  margin-top: 30px;
+}

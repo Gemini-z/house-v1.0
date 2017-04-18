@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>房源</title>
+    <link rel="stylesheet" href="css/web.css">
+</head>
+<body>
+<div class="top">
+    <div class="top-left">
+        <div class="logo"></div>
+        <div class="city">
+            <div>南京</div>
+            <div class="select">&#xe624;</div>
+            <div class="cities">
+                <span class="site">苏州</span>&nbsp;
+                <span class="site">无锡</span>&nbsp;
+                <span class="site">常州</span>&nbsp;
+                <span class="site">扬州</span>&nbsp;
+                <span class="site">南通</span>&nbsp;
+                <span class="site">淮安</span>&nbsp;
+            </div>
+        </div>
+        <div class="navs">
+            <div class="nav">首页</div>
+            <div class="nav">爱租找房</div>
+            <div class="nav">地图找房</div>
+            <div class="nav">爱租金融</div>
+        </div>
+    </div>
+    <div class="top-right">
+        <div class="enter">
+            用户登录&nbsp;|&nbsp;公寓登录&nbsp;|&nbsp;<span>&#xe61f;</span>手机爱租
+        </div>
+    </div>
+</div>
+<div class="site">
+    <div class="site1">
+        您的当前位置：爱租哪&nbsp;>&nbsp;个人中心&nbsp;>&nbsp;发布房源
+    </div>
+</div>
+<div class="ban">
+    <div class="ban-left">
+        <div class="left-tit1">
+            <div class="tit1"><b>账户管理</b></div>
+            <div class="tit2">个人资料</div>
+            <div class="tit2">修改密码</div>
+            <div class="tit2">手机修改</div>
+        </div>
+        <div class="left-tit2">
+            <div class="tit1"><b>我的收藏</b></div>
+            <div class="tit2">收藏房源</div>
+            <div class="tit2">找房条件</div>
+        </div>
+        <div class="left-tit3">
+            <div class="tit1"><b>我的收藏</b></div>
+            <div class="tit2">收藏房源</div>
+            <div class="tit2">找房条件</div>
+        </div>
+    </div>
+    <div class="ban-right">
+        <div class="right-top">
+            <div class="pic1">基本信息</div>
+            <div class="pic2">其他信息</div>
+            <div class="pic3">个人信息</div>
+        </div>
+        <div class="name">
+            <div class="text1">*小区名称：</div>
+            <input type="text" placeholder="请输入小区名称" class="input">
+            <div class="judge "></div>
+        </div>
+        <div class="seek">
+            <input class="find" type="button" value="地图找房" >
+            <div class="map"></div>
+        </div>
+        <div class="area">
+            <div class="star">*</div>
+            <div class="text2">区属板块：</div>
+            <select class="select1">
+                <option>区属</option>
+                <option>秦淮区</option>
+                <option>雨花台区</option>
+                <option>六合区</option>
+            </select>
+            <span id="check"></span>
+            <select class="select2">
+                <option>板块</option>
+                <option>秦淮区</option>
+                <option>雨花台区</option>
+                <option>六合区</option>
+            </select>
+        </div>
+        <div class="house">
+            <div class="star">*</div>
+            <div class="text2">户型：</div>
+            <input class="input" type="text">
+            <div class="room">室</div>
+            <input class="input" type="text">
+            <div class="room">厅</div>
+            <input class="input" type="text">
+            <div class="room">卫</div>
+            <input class="input" type="text">
+            <div class="room1">阳台</div>
+        </div>
+        <!--出租-->
+        <div class="rent">
+            <div class="star">*</div>
+            <div class="text2">出租形式：</div>
+            <div class="font">
+                <input type="radio" name="font">&nbsp;整租&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="font">&nbsp;合租
+            </div>
+            <select class="bedroom">
+                <option>选择卧室内容</option>
+                <option>卧室1</option>
+                <option>卧室2</option>
+                <option>卧室2</option>
+            </select>
+            <div id="check1"></div>
+            <select class="condition">
+                <option>选择限制条件</option>
+                <option>条件1</option>
+                <option>条件2</option>
+                <option>条件3</option>
+            </select>
+        </div>
+        <!--面积-->
+        <div class="pro">
+            <div class="star">*</div>
+            <div class="text2">面积：</div>
+            <div class="text">
+                <input class="text-1" type="text" placeholder="请输入面积" >
+                <input class="text-2" type="text" value="平方米">
+            </div>
+            <span class="num"></span>
+        </div>
+        <div class="money">
+            <div class="star">*</div>
+            <div class="text2">租金：</div>
+            <div class="text">
+                <input class="text_1" type="text" placeholder="请输入租金" >
+                <input class="text_2" type="text" value="元/月">
+            </div>
+            <span class="nb"></span>
+        </div>
+        <div class="tel">
+            <div class="star">*</div>
+            <div class="text2">手机号：</div>
+            <input type="text" placeholder="请输入手机号码" class="import">
+            <span class="alter"></span>
+        </div>
+        <!--付款-->
+        <div class="pay">
+            <div class="star">*</div>
+            <div class="text2">付款方式：</div>
+            <div class="choice">
+                <input type="checkbox">月付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">季付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">半年付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">年付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox">都可以
+            </div>
+        </div>
+        <div class="total">
+            <div class="star">*</div>
+            <div class="text2">综合信息：</div>
+            <input type="text" class="fuzzy">
+        </div>
+        <input class="refer" type="button" value="提交">
+    </div>
+</div>
+<div class="bottom">
+    <div class="bottom-left">
+        <div class="font">
+            <p>首页&nbsp;|&nbsp;爱租找房&nbsp;|&nbsp;地图找房&nbsp;|&nbsp;爱租金融&nbsp;|&nbsp;公司介绍&nbsp;&nbsp;&nbsp;&nbsp;爱租哪&nbsp;aizuna.house365.com</p>
+            <p>苏ICP证编号&nbsp;B2-20110162&nbsp;信息网络传播视听节目许可证&nbsp;1009365&nbsp;号</p>
+            <p class="a"><img src="image/bottom1.png" class="pic">&nbsp;苏公网安备&nbsp;3201502010010号</p>
+        </div>
+    </div>
+    <div class="bottom-right">
+        <img src="image/bottom2.png" class="bottom-logo">
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/js.js"></script>

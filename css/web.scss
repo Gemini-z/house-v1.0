@@ -1,0 +1,569 @@
+@import url(../iconfont/iconfont.css);
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  height:100%;
+  font-family: 'Microsoft Yahei';
+}
+@mixin tit1{
+  width: 100%;
+  height: 37px;
+  background: #f7f7f7;
+  font-size: 14px;
+  color: #333333;
+  border-bottom:1px solid #dddddd;
+  line-height: 37px;
+  text-indent: 2em;
+}
+@mixin tit2{
+  font-size: 14px;
+  color: #4e4e4e;
+  text-indent: 2em;
+  margin-top: 14px;
+}
+@mixin star{
+  .star{
+    color: red;
+    float: left;
+    line-height: 31px;
+  }
+  .text2{
+    font-size: 14px;
+    color: #696969;
+    line-height: 31px;
+    float: left;
+  }
+}
+.top{
+  width: 100%;
+  height: 66px;
+  background: #f6f6f6;
+  margin:0 auto;
+  .top-left{
+    width: 65%;
+    height: 66px;
+    float: left;
+    .logo{
+      width: 114px;
+      height: 66px;
+      background: url("../image/logo.png") center center no-repeat;
+      float: left;
+      margin-left:70px;
+    }
+    .city{
+      height: 66px;
+      border: none;
+      font-size:14px;
+      color: #5a5a5a;
+      background: #f6f6f6;
+      float: left;
+      margin-left: 50px;
+      line-height: 66px;
+      .select{
+        font-family: 'iconfont';
+        color: #f1b07a;
+        float: left;
+        margin-top: -65px;
+        margin-left: 30px;
+        cursor: pointer;
+      }
+      .cities{
+        width: 130px;
+        height: 80px;
+        border:1px solid #ccc;
+        background: #fcfbfb;
+        line-height: 40px;
+        position: absolute;
+        top:60px;
+        left:200px;
+        display: none;
+        .site{
+          font-size: 16px;
+          color: #5a5a5a;
+          text-indent: 13px;
+        }
+      }
+    }
+    .navs{
+      width: 420px;
+      height: 66px;
+      float: right;
+      .nav{
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+        line-height: 66px;
+        float: left;
+        margin-left: 15px;
+      }
+    }
+  }
+  .top-right{
+    width: 35%;
+    height: 66px;
+    float: right;
+    .enter{
+      font-size: 14px;
+      color: #333;
+      line-height: 66px;
+      margin-left: 100px;
+      span{
+        font-family: 'iconfont';
+        color: #f1b07a;
+      }
+    }
+  }
+}
+.site{
+  width:100%;
+  height: 56px;
+  .site1{
+    font-size: 14px;
+    color: #a3a3a3;
+    line-height: 56px;
+    margin-left: 75px;
+  }
+}
+.ban{
+  width: 1200px;
+  height: auto;
+  margin:0 auto;
+  .ban-left{
+    width: 258px;
+    height: 638px;
+    float: left;
+    .left-tit1{
+      width: 100%;
+      height: 146px;
+      border:1px solid #dddddd;
+      overflow: hidden;
+      .tit1{
+       @include tit1;
+      }
+      .tit2{
+        @include tit2;
+      }
+    }
+    .left-tit2{
+      width: 100%;
+      height: 116px;
+      border:1px solid #dddddd;
+      border-top: none;
+      .tit1{
+        @include tit1;
+      }
+      .tit2{
+        @include tit2;
+      }
+    }
+    .left-tit3{
+      width: 100%;
+      height: 121px;
+      border:1px solid #dddddd;
+      border-top: none;
+      .tit1{
+        @include tit1;
+      }
+      .tit2{
+        @include tit2;
+      }
+    }
+  }
+  .ban-right{
+    width: 923px;
+    height: auto;
+    float: right;
+    margin-left:19px;
+    .right-top{
+      width: 783px;
+      height: 35px;
+      .pic1{
+        width: 270px;
+        height: 35px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        background: url("../image/top1.png") no-repeat;
+        float: left;
+      }
+      .pic2{
+        width: 270px;
+        height: 35px;
+        font-size: 14px;
+        color: #4b4b4b;
+        text-align: center;
+        line-height: 35px;
+        background: url("../image/top2.png") no-repeat;
+        float: left;
+        margin-left: -15px;
+      }
+      .pic3{
+        width: 257px;
+        height: 35px;
+        font-size: 14px;
+        color: #4b4b4b;
+        text-align: center;
+        line-height: 35px;
+        background: url("../image/top3.png") no-repeat;
+        float: left;
+        margin-left: -15px;
+      }
+    }
+    .name{
+      width: 555px;
+      height: 33px;
+      float: left;
+      margin-left:63px ;
+      margin-top: 34px;
+      .text1{
+        font-size: 14px;
+        color: #a4a4a4;
+        line-height: 33px;
+        float: left;
+      }
+      .input{
+        width: 423px;
+        height: 33px;
+        border: 1px solid #999;
+        border-radius: 4px;
+        text-indent: 13px;
+      }
+      .judge{
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        float: right;
+      }
+    }
+    .seek{
+      width: 300px;
+      height: auto;
+      float: left;
+      margin-left:-500px;
+      margin-top: 90px;
+      .find{
+        width: 100px;
+        height: 30px;
+        background: #ec6c00;
+        border:1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      .map{
+        width: 500px;
+        height: 200px;
+        border:1px solid #ccc;
+        float: left;
+        display: none;
+      }
+    }
+    .area{
+      width: 530px;
+      height: 34px;
+      float: left;
+      margin-left: 60px;
+      margin-top: 31px;
+      @include star;
+      .select1{
+        width: 201px;
+        height: 31px;
+        font-size: 13px;
+        color: #b2b2b2;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        text-indent: 13px;
+        float: left;
+      }
+      #check{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        float: left;
+        margin-left: 220px;
+        font-family: 'iconfont';
+      }
+      .select2{
+        width: 201px;
+        height: 31px;
+        font-size: 13px;
+        color: #b2b2b2;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        text-indent: 13px;
+        float: left;
+        margin-top: -31px;
+        margin-left:20px;
+      }
+    }
+    .house{
+      width: 472px;
+      height: 32px;
+      float: left;
+      margin-left: 89px;
+      margin-top: 29px;
+      @include star;
+      .input{
+        width: 76px;
+        height: 30px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        float: left;
+
+      }
+      .room{
+         width: 27px;
+         height: 31px;
+         font-size: 16px;
+         color: #707070;
+         text-align: center;
+         line-height: 30px;
+         float: left;
+       }
+      .room1{
+        width: 40px;
+        height: 31px;
+        font-size: 16px;
+        color: #707070;
+        text-align: center;
+        line-height: 30px;
+        float: left;
+        margin-left: 445px;
+        margin-top: -30px;
+      }
+    }
+    .rent{
+      width: 550px;
+      height: 34px;
+      float: left;
+      margin-left: 61px;
+      margin-top: 28px;
+      @include star;
+      .font{
+        font-size: 13px;
+        color: #8f8f8f;
+        line-height: 30px;
+      }
+      .bedroom{
+        width: 121px;
+        height: 30px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        font-size: 13px;
+        color: #d6d6d6;
+        float: left;
+        margin-top: -30px;
+        margin-left: 170px;
+      }
+      #check1{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        float: left;
+        margin-left: 428px;
+        margin-top: -30px;
+        font-family: 'iconfont';
+      }
+      .condition{
+        width: 121px;
+        height: 30px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        font-size: 13px;
+        color: #d6d6d6;
+        float: left;
+        margin-top: -30px;
+        margin-left: 381px;
+      }
+    }
+    .pro{
+      width: 530px;
+      height: 31px;
+      float: left;
+      margin-left: 88px;
+      margin-top: 28px;
+      @include star;
+      .text{
+        width: 420px;
+        height: 31px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        text-indent: 13px;
+        overflow: hidden;
+        float: left;
+        .text-1{
+          border:none;
+          float: left;
+          line-height: 31px;
+          text-indent: 13px;
+          outline: none;
+        }
+        .text-2{
+          font-size: 16px;
+          border:none;
+          float: right;
+          margin-right: -140px;
+          line-height: 31px;
+        }
+      }
+      .num{
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        float: right;
+      }
+    }
+    .money{
+      width: 530px;
+      height: 31px;
+      float: left;
+      margin-left: 88px;
+      margin-top: 28px;
+      @include star;
+      .text{
+        width: 420px;
+        height: 31px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        text-indent: 13px;
+        overflow: hidden;
+        float: left;
+        .text_1{
+          border:none;
+          float: left;
+          line-height: 31px;
+          text-indent: 13px;
+          outline: none;
+        }
+        .text_2{
+          font-size: 16px;
+          border:none;
+          float: right;
+          margin-right: -155px;
+          line-height: 31px;
+        }
+      }
+      .nb{
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        float: right;
+      }
+    }
+    .tel{
+      width: 476px;
+      height: 31px;
+      float: left;
+      margin-left: 61px;
+      margin-top: 28px;
+      @include star;
+      .import{
+        width: 435px;
+        height: 31px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        text-indent: 13px;
+        float: left;
+        margin-left: 61px;
+        margin-top: -31px;
+      }
+      .alter{
+        width: 250px;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        margin-left: 503px;
+        margin-top:-30px;
+      }
+    }
+    .pay{
+        width: 505px;
+        height: 31px;
+        float: left;
+        margin-left: 61px;
+        margin-top: 28px;
+        @include star;
+      .choice{
+        font-size: 16px;
+        color: #707070;
+        line-height: 31px;
+
+      }
+    }
+    .total{
+      width: 505px;
+      height: 31px;
+      float: left;
+      margin-left: 61px;
+      margin-top: 28px;
+      @include star;
+      .fuzzy{
+        width: 435px;
+        height: 31px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        float: left;
+        margin-left: 75px;
+        margin-top: -31px;
+      }
+    }
+    .refer{
+      width: 140px;
+      height: 41px;
+      background: #ec6c00;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      line-height: 41px;
+      float: left;
+      margin-left: -430px;
+      margin-top: 81px;
+    }
+  }
+}
+.bottom{
+  width: 100%;
+  height: 117px;
+  background: #333;
+  float: left;
+  .bottom-left{
+    width: 70%;
+    height: 117px;
+    float: left;
+    .font{
+      float: left;
+      margin-left: 70px;
+      margin-top: 30px;
+      p{
+        font-size: 12px;
+        color: #8b8b8b;
+        line-height: 20px;
+        .pic{
+          float: left;
+          margin-left: -15px;
+        }
+        .a{
+          font-size: 12px;
+          color: #8b8b8b;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .bottom-right{
+    width: 30%;
+    height: 117px;
+    float: right;
+    .bottom-logo{
+      float: right;
+      margin-right: 80px;
+      margin-top: 30px;
+    }
+  }
+}
