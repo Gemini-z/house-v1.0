@@ -36,6 +36,25 @@ html,body{
     float: left;
   }
 }
+@mixin input{
+  width: 76px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  float: left;
+}
+@mixin r{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: -58px;
+  font-family: 'iconfont';
+}
+input{
+   text-indent: 13px;
+ }
 .top{
   width: 100%;
   height: 66px;
@@ -89,14 +108,14 @@ html,body{
     .navs{
       width: 420px;
       height: 66px;
-      float: right;
+      float: left;
       .nav{
         font-size: 16px;
         color: #333;
         text-align: center;
         line-height: 66px;
         float: left;
-        margin-left: 15px;
+        margin-left: 25px;
       }
     }
   }
@@ -176,6 +195,7 @@ html,body{
     height: auto;
     float: right;
     margin-left:19px;
+    position: relative;
     .right-top{
       width: 783px;
       height: 35px;
@@ -214,8 +234,7 @@ html,body{
     }
     .name{
       width: 555px;
-      height: 33px;
-      float: left;
+      height: 100px;
       margin-left:63px ;
       margin-top: 34px;
       .text1{
@@ -224,7 +243,7 @@ html,body{
         line-height: 33px;
         float: left;
       }
-      .input{
+      .plot{
         width: 423px;
         height: 33px;
         border: 1px solid #999;
@@ -237,13 +256,24 @@ html,body{
         line-height: 30px;
         float: right;
       }
+      .query{
+        width: 423px;
+        height: auto;
+        float: left;
+        background: red;
+        position: absolute;
+        left: 140px;
+        top:104px;
+        background:  #f6f6f6;
+        border:1px solid #ccc;
+        display: none;
+      }
     }
     .seek{
       width: 300px;
       height: auto;
-      float: left;
-      margin-left:-500px;
-      margin-top: 90px;
+      margin-left:59px;
+      margin-top: -40px;
       .find{
         width: 100px;
         height: 30px;
@@ -251,6 +281,7 @@ html,body{
         border:1px solid #ccc;
         border-radius: 4px;
         font-size: 16px;
+        cursor: pointer;
       }
       .map{
         width: 500px;
@@ -258,12 +289,19 @@ html,body{
         border:1px solid #ccc;
         float: left;
         display: none;
+        .map-1{
+          width: 10px;
+          height: 10px;
+          float: right;
+          margin-top: 0;
+          margin-right: 0;
+          cursor: pointer;
+        }
       }
     }
     .area{
       width: 530px;
       height: 34px;
-      float: left;
       margin-left: 60px;
       margin-top: 31px;
       @include star;
@@ -298,21 +336,34 @@ html,body{
         margin-top: -31px;
         margin-left:20px;
       }
+      #check2{
+        width: 20px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        float: left;
+        margin-top: -30px;
+        font-family: 'iconfont';
+      }
     }
     .house{
-      width: 472px;
+      width: auto;
       height: 32px;
       float: left;
       margin-left: 89px;
       margin-top: 29px;
       @include star;
-      .input{
-        width: 76px;
-        height: 30px;
-        border: 1px solid #d9d9d9;
-        border-radius: 4px;
-        float: left;
-
+      .input1{
+        @include input;
+      }
+      .input2{
+        @include input;
+      }
+      .input3{
+        @include input;
+      }
+      .input4{
+        @include input;
       }
       .room{
          width: 27px;
@@ -322,7 +373,24 @@ html,body{
          text-align: center;
          line-height: 30px;
          float: left;
-       }
+      }
+      #r1{
+        @include r;
+      }
+      #r2{
+        @include r;
+      }
+      #r3{
+        @include r;
+      }
+      #r4{
+        @include r;
+        margin-left: -63px;
+      }
+      #r5{
+        @include r;
+        margin-left: 0;
+      }
       .room1{
         width: 40px;
         height: 31px;
@@ -331,8 +399,6 @@ html,body{
         text-align: center;
         line-height: 30px;
         float: left;
-        margin-left: 445px;
-        margin-top: -30px;
       }
     }
     .rent{
@@ -356,7 +422,7 @@ html,body{
         color: #d6d6d6;
         float: left;
         margin-top: -30px;
-        margin-left: 170px;
+        margin-left: 164px;
       }
       #check1{
         width: 30px;
@@ -379,13 +445,22 @@ html,body{
         margin-top: -30px;
         margin-left: 381px;
       }
+      #check3{
+        width: 20px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        float: left;
+        margin-left: 363px;
+        margin-top: -30px;
+        font-family: 'iconfont';
+      }
     }
     .pro{
       width: 530px;
       height: 31px;
-      float: left;
       margin-left: 88px;
-      margin-top: 28px;
+      margin-top: 145px;
       @include star;
       .text{
         width: 420px;
@@ -406,7 +481,7 @@ html,body{
           font-size: 16px;
           border:none;
           float: right;
-          margin-right: -140px;
+          margin-right: -130px;
           line-height: 31px;
         }
       }
@@ -420,7 +495,6 @@ html,body{
     .money{
       width: 530px;
       height: 31px;
-      float: left;
       margin-left: 88px;
       margin-top: 28px;
       @include star;
@@ -443,7 +517,7 @@ html,body{
           font-size: 16px;
           border:none;
           float: right;
-          margin-right: -155px;
+          margin-right: -143px;
           line-height: 31px;
         }
       }
@@ -455,7 +529,7 @@ html,body{
       }
     }
     .tel{
-      width: 476px;
+      width: 100%;
       height: 31px;
       float: left;
       margin-left: 61px;
@@ -467,9 +541,6 @@ html,body{
         border: 1px solid #d9d9d9;
         border-radius: 4px;
         text-indent: 13px;
-        float: left;
-        margin-left: 61px;
-        margin-top: -31px;
       }
       .alter{
         width: 250px;
@@ -480,10 +551,43 @@ html,body{
         margin-top:-30px;
       }
     }
+    .pic{
+      width: 100%;
+      height: auto;
+      margin-left: 59px;
+      margin-top: 80px;
+      @include star;
+      .add{
+        width: 20px;
+        height: 20px;
+        border:1px dotted #ccc;
+        background: #f6f6f6;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+        color: #999;
+        cursor: pointer;
+        margin-left: 80px;
+      }
+      .img{
+        width: 500px;
+        height: 300px;
+        border:1px solid #ccc;
+        cursor: pointer;
+        margin-left: 80px;
+        display: none;
+        .img-1{
+          width: 10px;
+          height: 10px;
+          float: right;
+          margin-top: 0;
+          margin-right: 0;
+        }
+      }
+    }
     .pay{
-        width: 505px;
+        width: 100%;
         height: 31px;
-        float: left;
         margin-left: 61px;
         margin-top: 28px;
         @include star;
@@ -491,24 +595,21 @@ html,body{
         font-size: 16px;
         color: #707070;
         line-height: 31px;
-
       }
     }
     .total{
-      width: 505px;
-      height: 31px;
-      float: left;
+      width: 100%;
+      height: auto;
       margin-left: 61px;
       margin-top: 28px;
       @include star;
       .fuzzy{
         width: 435px;
-        height: 31px;
+        height: 100px;
         border: 1px solid #d9d9d9;
         border-radius: 4px;
-        float: left;
-        margin-left: 75px;
-        margin-top: -31px;
+        margin-left: 78px;
+        overflow: scroll;
       }
     }
     .refer{
@@ -521,9 +622,8 @@ html,body{
       color: #fff;
       text-align: center;
       line-height: 41px;
-      float: left;
-      margin-left: -430px;
-      margin-top: 81px;
+      margin-left: 140px;
+      margin-top: 28px;
     }
   }
 }
@@ -547,11 +647,7 @@ html,body{
         .pic{
           float: left;
           margin-left: -15px;
-        }
-        .a{
-          font-size: 12px;
-          color: #8b8b8b;
-          line-height: 25px;
+          margin-top: -5px;
         }
       }
     }

@@ -66,12 +66,15 @@
         </div>
         <div class="name">
             <div class="text1">*小区名称：</div>
-            <input type="text" placeholder="请输入小区名称" class="input">
+            <input type="text" placeholder="请输入小区名称" class="plot">
             <div class="judge "></div>
+            <div class="query"></div>
         </div>
         <div class="seek">
             <input class="find" type="button" value="地图找房" >
-            <div class="map"></div>
+            <div class="map">
+                <div class="map-1">x</div>
+            </div>
         </div>
         <div class="area">
             <div class="star">*</div>
@@ -89,26 +92,32 @@
                 <option>雨花台区</option>
                 <option>六合区</option>
             </select>
+            <span id="check2"></span>
         </div>
         <div class="house">
             <div class="star">*</div>
             <div class="text2">户型：</div>
-            <input class="input" type="text">
+            <input class="input1" type="text">
             <div class="room">室</div>
-            <input class="input" type="text">
+            <div id="r1"></div>
+            <input class="input2" type="text">
             <div class="room">厅</div>
-            <input class="input" type="text">
+            <div id="r2"></div>
+            <input class="input3" type="text">
             <div class="room">卫</div>
-            <input class="input" type="text">
+            <div id="r3"></div>
+            <input class="input4" type="text">
             <div class="room1">阳台</div>
+            <div id="r4"></div>
+            <div id="r5"></div>
         </div>
         <!--出租-->
         <div class="rent">
             <div class="star">*</div>
             <div class="text2">出租形式：</div>
             <div class="font">
-                <input type="radio" name="font">&nbsp;整租&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="font">&nbsp;合租
+                <input type="radio" name="font" id="font1">&nbsp;整租&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="font" id="font2">&nbsp;合租
             </div>
             <select class="bedroom">
                 <option>选择卧室内容</option>
@@ -123,6 +132,7 @@
                 <option>条件2</option>
                 <option>条件3</option>
             </select>
+            <div id="check3"></div>
         </div>
         <!--面积-->
         <div class="pro">
@@ -149,22 +159,30 @@
             <input type="text" placeholder="请输入手机号码" class="import">
             <span class="alter"></span>
         </div>
+        <div class="pic">
+            <div class="star">*</div>
+            <div class="text2">图片上传：</div>
+            <div class="add">+</div>
+            <div class="img">
+                <div class="img-1">x</div>
+            </div>
+        </div>
         <!--付款-->
         <div class="pay">
             <div class="star">*</div>
             <div class="text2">付款方式：</div>
             <div class="choice">
-                <input type="checkbox">月付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="checkbox">季付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="checkbox">半年付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="checkbox">年付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="checkbox">都可以
+                <input type="checkbox" class="box">月付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" class="box">季付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" class="box">半年付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" class="box">年付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" class="c-box">都可以
             </div>
         </div>
         <div class="total">
             <div class="star">*</div>
             <div class="text2">综合信息：</div>
-            <input type="text" class="fuzzy">
+            <div class="fuzzy"></div>
         </div>
         <input class="refer" type="button" value="提交">
     </div>
@@ -174,7 +192,10 @@
         <div class="font">
             <p>首页&nbsp;|&nbsp;爱租找房&nbsp;|&nbsp;地图找房&nbsp;|&nbsp;爱租金融&nbsp;|&nbsp;公司介绍&nbsp;&nbsp;&nbsp;&nbsp;爱租哪&nbsp;aizuna.house365.com</p>
             <p>苏ICP证编号&nbsp;B2-20110162&nbsp;信息网络传播视听节目许可证&nbsp;1009365&nbsp;号</p>
-            <p class="a"><img src="image/bottom1.png" class="pic">&nbsp;苏公网安备&nbsp;3201502010010号</p>
+            <p>
+                <img src="image/bottom1.png" class="pic">
+                苏公网安备&nbsp;3201502010010号
+            </p>
         </div>
     </div>
     <div class="bottom-right">

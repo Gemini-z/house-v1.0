@@ -9,6 +9,10 @@ html, body {
   font-family: 'Microsoft Yahei';
 }
 
+input {
+  text-indent: 13px;
+}
+
 .top {
   width: 100%;
   height: 66px;
@@ -64,7 +68,7 @@ html, body {
 .top .top-left .navs {
   width: 420px;
   height: 66px;
-  float: right;
+  float: left;
 }
 .top .top-left .navs .nav {
   font-size: 16px;
@@ -72,7 +76,7 @@ html, body {
   text-align: center;
   line-height: 66px;
   float: left;
-  margin-left: 15px;
+  margin-left: 25px;
 }
 .top .top-right {
   width: 35%;
@@ -182,6 +186,7 @@ html, body {
   height: auto;
   float: right;
   margin-left: 19px;
+  position: relative;
 }
 .ban .ban-right .right-top {
   width: 783px;
@@ -221,8 +226,7 @@ html, body {
 }
 .ban .ban-right .name {
   width: 555px;
-  height: 33px;
-  float: left;
+  height: 100px;
   margin-left: 63px;
   margin-top: 34px;
 }
@@ -232,7 +236,7 @@ html, body {
   line-height: 33px;
   float: left;
 }
-.ban .ban-right .name .input {
+.ban .ban-right .name .plot {
   width: 423px;
   height: 33px;
   border: 1px solid #999;
@@ -245,12 +249,23 @@ html, body {
   line-height: 30px;
   float: right;
 }
+.ban .ban-right .name .query {
+  width: 423px;
+  height: auto;
+  float: left;
+  background: red;
+  position: absolute;
+  left: 140px;
+  top: 104px;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  display: none;
+}
 .ban .ban-right .seek {
   width: 300px;
   height: auto;
-  float: left;
-  margin-left: -500px;
-  margin-top: 90px;
+  margin-left: 59px;
+  margin-top: -40px;
 }
 .ban .ban-right .seek .find {
   width: 100px;
@@ -259,6 +274,7 @@ html, body {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+  cursor: pointer;
 }
 .ban .ban-right .seek .map {
   width: 500px;
@@ -267,10 +283,17 @@ html, body {
   float: left;
   display: none;
 }
+.ban .ban-right .seek .map .map-1 {
+  width: 10px;
+  height: 10px;
+  float: right;
+  margin-top: 0;
+  margin-right: 0;
+  cursor: pointer;
+}
 .ban .ban-right .area {
   width: 530px;
   height: 34px;
-  float: left;
   margin-left: 60px;
   margin-top: 31px;
 }
@@ -316,8 +339,17 @@ html, body {
   margin-top: -31px;
   margin-left: 20px;
 }
+.ban .ban-right .area #check2 {
+  width: 20px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-top: -30px;
+  font-family: 'iconfont';
+}
 .ban .ban-right .house {
-  width: 472px;
+  width: auto;
   height: 32px;
   float: left;
   margin-left: 89px;
@@ -334,7 +366,28 @@ html, body {
   line-height: 31px;
   float: left;
 }
-.ban .ban-right .house .input {
+.ban .ban-right .house .input1 {
+  width: 76px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  float: left;
+}
+.ban .ban-right .house .input2 {
+  width: 76px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  float: left;
+}
+.ban .ban-right .house .input3 {
+  width: 76px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  float: left;
+}
+.ban .ban-right .house .input4 {
   width: 76px;
   height: 30px;
   border: 1px solid #d9d9d9;
@@ -350,6 +403,53 @@ html, body {
   line-height: 30px;
   float: left;
 }
+.ban .ban-right .house #r1 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: -58px;
+  font-family: 'iconfont';
+}
+.ban .ban-right .house #r2 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: -58px;
+  font-family: 'iconfont';
+}
+.ban .ban-right .house #r3 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: -58px;
+  font-family: 'iconfont';
+}
+.ban .ban-right .house #r4 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: -58px;
+  font-family: 'iconfont';
+  margin-left: -63px;
+}
+.ban .ban-right .house #r5 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: -58px;
+  font-family: 'iconfont';
+  margin-left: 0;
+}
 .ban .ban-right .house .room1 {
   width: 40px;
   height: 31px;
@@ -358,8 +458,6 @@ html, body {
   text-align: center;
   line-height: 30px;
   float: left;
-  margin-left: 445px;
-  margin-top: -30px;
 }
 .ban .ban-right .rent {
   width: 550px;
@@ -393,7 +491,7 @@ html, body {
   color: #d6d6d6;
   float: left;
   margin-top: -30px;
-  margin-left: 170px;
+  margin-left: 164px;
 }
 .ban .ban-right .rent #check1 {
   width: 30px;
@@ -416,12 +514,21 @@ html, body {
   margin-top: -30px;
   margin-left: 381px;
 }
+.ban .ban-right .rent #check3 {
+  width: 20px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin-left: 363px;
+  margin-top: -30px;
+  font-family: 'iconfont';
+}
 .ban .ban-right .pro {
   width: 530px;
   height: 31px;
-  float: left;
   margin-left: 88px;
-  margin-top: 28px;
+  margin-top: 145px;
 }
 .ban .ban-right .pro .star {
   color: red;
@@ -454,7 +561,7 @@ html, body {
   font-size: 16px;
   border: none;
   float: right;
-  margin-right: -140px;
+  margin-right: -130px;
   line-height: 31px;
 }
 .ban .ban-right .pro .num {
@@ -466,7 +573,6 @@ html, body {
 .ban .ban-right .money {
   width: 530px;
   height: 31px;
-  float: left;
   margin-left: 88px;
   margin-top: 28px;
 }
@@ -501,7 +607,7 @@ html, body {
   font-size: 16px;
   border: none;
   float: right;
-  margin-right: -155px;
+  margin-right: -143px;
   line-height: 31px;
 }
 .ban .ban-right .money .nb {
@@ -511,7 +617,7 @@ html, body {
   float: right;
 }
 .ban .ban-right .tel {
-  width: 476px;
+  width: 100%;
   height: 31px;
   float: left;
   margin-left: 61px;
@@ -534,9 +640,6 @@ html, body {
   border: 1px solid #d9d9d9;
   border-radius: 4px;
   text-indent: 13px;
-  float: left;
-  margin-left: 61px;
-  margin-top: -31px;
 }
 .ban .ban-right .tel .alter {
   width: 250px;
@@ -546,10 +649,53 @@ html, body {
   margin-left: 503px;
   margin-top: -30px;
 }
-.ban .ban-right .pay {
-  width: 505px;
-  height: 31px;
+.ban .ban-right .pic {
+  width: 100%;
+  height: auto;
+  margin-left: 59px;
+  margin-top: 80px;
+}
+.ban .ban-right .pic .star {
+  color: red;
   float: left;
+  line-height: 31px;
+}
+.ban .ban-right .pic .text2 {
+  font-size: 14px;
+  color: #696969;
+  line-height: 31px;
+  float: left;
+}
+.ban .ban-right .pic .add {
+  width: 20px;
+  height: 20px;
+  border: 1px dotted #ccc;
+  background: #f6f6f6;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: #999;
+  cursor: pointer;
+  margin-left: 80px;
+}
+.ban .ban-right .pic .img {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-left: 80px;
+  display: none;
+}
+.ban .ban-right .pic .img .img-1 {
+  width: 10px;
+  height: 10px;
+  float: right;
+  margin-top: 0;
+  margin-right: 0;
+}
+.ban .ban-right .pay {
+  width: 100%;
+  height: 31px;
   margin-left: 61px;
   margin-top: 28px;
 }
@@ -570,9 +716,8 @@ html, body {
   line-height: 31px;
 }
 .ban .ban-right .total {
-  width: 505px;
-  height: 31px;
-  float: left;
+  width: 100%;
+  height: auto;
   margin-left: 61px;
   margin-top: 28px;
 }
@@ -589,12 +734,11 @@ html, body {
 }
 .ban .ban-right .total .fuzzy {
   width: 435px;
-  height: 31px;
+  height: 100px;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  float: left;
-  margin-left: 75px;
-  margin-top: -31px;
+  margin-left: 78px;
+  overflow: scroll;
 }
 .ban .ban-right .refer {
   width: 140px;
@@ -606,9 +750,8 @@ html, body {
   color: #fff;
   text-align: center;
   line-height: 41px;
-  float: left;
-  margin-left: -430px;
-  margin-top: 81px;
+  margin-left: 140px;
+  margin-top: 28px;
 }
 
 .bottom {
@@ -635,11 +778,7 @@ html, body {
 .bottom .bottom-left .font p .pic {
   float: left;
   margin-left: -15px;
-}
-.bottom .bottom-left .font p .a {
-  font-size: 12px;
-  color: #8b8b8b;
-  line-height: 25px;
+  margin-top: -5px;
 }
 .bottom .bottom-right {
   width: 30%;
