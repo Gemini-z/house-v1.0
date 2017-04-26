@@ -18,7 +18,7 @@ $(function(){
         d:"弓箭坊社区",
     }
 
-    $(".plot").on("keyup",function(){
+    $(".plot").on("keyup",function(){//键盘离开的时候
         var val = $(".plot").val()
         if(val == '弓'){
             $(".query").html("");
@@ -27,11 +27,6 @@ $(function(){
         }
     })
 
-    $(".plot").on("click",function(){
-        $(".query").html("");
-        $(".query").show().append('<p style="font-size:14px">'+json.a+'</p>').append('<p style="font-size:14px">'+json.b+'</p>')
-            .append('<p style="font-size:14px">'+json.c+'</p>').append('<p style="font-size:14px">'+json.d+'</p>')
-    })
     $(".query").on("click",function(){
         var p = $(".query p").text();
         $(".plot").text(p);
@@ -89,7 +84,6 @@ $(function(){
     //验证户型
     var house = /^[0-9]+$/; //只能输入数字
     var val;
-
     $(".input1").on("input change",function(){
         val = $(this).val();
         if(!house.test(val)){
@@ -97,7 +91,7 @@ $(function(){
             $("#r1").css("color","red").addClass("h");
         }else{
             $("#r1").html("&#xe665;");
-            $("#r1").css("color","green").removeClass(h);
+            $("#r1").css("color","green").removeClass("h");
         }
     });
     $(".input2").on("input change",function(){
@@ -107,7 +101,7 @@ $(function(){
             $("#r2").css("color","red").addClass("h");
         }else{
             $("#r2").html("&#xe665;");
-            $("#r2").css("color","green").removeClass(h);
+            $("#r2").css("color","green").removeClass("h");
         }
     });
     $(".input3").on("input change",function(){
@@ -117,7 +111,7 @@ $(function(){
             $("#r3").css("color","red").addClass("h");
         }else{
             $("#r3").html("&#xe665;");
-            $("#r3").css("color","green").removeClass(h);
+            $("#r3").css("color","green").removeClass("h");
         }
     });
     $(".input4").on("input change",function(){
@@ -127,7 +121,7 @@ $(function(){
             $("#r4").css("color","red").addClass("h");
         }else{
             $("#r4").html("&#xe665;");
-            $("#r4").css("color","green").removeClass(h);
+            $("#r4").css("color","green").removeClass("h");
         }
     });
     $(".input1,.input2,.input3,.input4").on("input blur",function(){
@@ -140,7 +134,7 @@ $(function(){
             $("#r5").css("color", "red").addClass("h");
         }else{
             $("#r5").html("&#xe665;");
-            $("#r5").css("color","green").removeClass(h);
+            $("#r5").css("color","green").removeClass("h");
         }
     })
 
@@ -154,7 +148,7 @@ $(function(){
             $("#check3").css("color","red").addClass("h");
         }else{
             $("#check3").html("&#xe665;");
-            $("#check3").css("color","green").removeClass(h);
+            $("#check3").css("color","green").removeClass("h");
         }
     });
     $(".condition").change(function(){
@@ -164,7 +158,7 @@ $(function(){
             $("#check1").css("color","red").addClass("h");
         }else{
             $("#check1").html("&#xe665;");
-            $("#check1").css("color","green").removeClass(h);
+            $("#check1").css("color","green").removeClass("h");
         }
     });
 
@@ -190,7 +184,7 @@ $(function(){
             $(".nb").css({"color":'red',"font-family":'iconfont'}).addClass("h");
         }else{
             $(".nb").html("&#xe665;");
-            $(".nb").css({"color":'green',"font-family":'iconfont'}).removeClass(h);
+            $(".nb").css({"color":'green',"font-family":'iconfont'}).removeClass("h");
         }
     });
 
@@ -207,7 +201,7 @@ $(function(){
             $(".alter").css("color","red").addClass("h");
         }else {
             $(".alter").html("&#xe665;");
-            $(".alter").css({"color":'green',"font-family":'iconfont'}).removeClass(h);
+            $(".alter").css({"color":'green',"font-family":'iconfont'}).removeClass("h");
         }
     });
 
@@ -232,31 +226,19 @@ $(function(){
     })
 
     //验证综合信息
-    var a;
-    var b;
-    var c;
-    var d;
-    var e;
-    var f;
-    var g;
-    var h;
-    var j;
-    var k;
-    var l;
-    var i;
     $(window).on("change",function(){
-         a = $(".plot").val();
-         b = $(".select1").find("option:selected").text();
-         c = $(".select2").find("option:selected").text();
-         d = $(".input1").val();
-         e = $(".input2").val();
-         f = $(".input3").val();
-         g = $(".input4").val();
-         h = $(".bedroom").find("option:selected").text();
-         j = $(".condition").find("option:selected").text();
-         k = $(".text-1").val();
-         l = $(".text_1").val();
-         i = $(".import").val();
+         var a = $(".plot").val();
+         var b = $(".select1").find("option:selected").text();
+         var c = $(".select2").find("option:selected").text();
+         var d = $(".input1").val();
+         var e = $(".input2").val();
+         var f = $(".input3").val();
+         var g = $(".input4").val();
+         var h = $(".bedroom").find("option:selected").text();
+         var j = $(".condition").find("option:selected").text();
+         var k = $(".text-1").val();
+         var l = $(".text_1").val();
+         var i = $(".import").val();
         if($("#font1").attr("checked")){
             var m = "整租";
         }else{
@@ -314,12 +296,4 @@ $(function(){
             }
         })
     })
-
-
-
-
-
-
-
-
 })
